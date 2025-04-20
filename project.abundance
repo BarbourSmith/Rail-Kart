@@ -40,8 +40,8 @@
         {
             "atomType": "Molecule",
             "name": "Body",
-            "x": 0.19113756613756613,
-            "y": 0.3537604456824513,
+            "x": 0.19378306878306878,
+            "y": 0.34818941504178275,
             "uniqueID": 1745164543668,
             "ioValues": [
                 {
@@ -70,7 +70,7 @@
                     "atomType": "Input",
                     "name": "Wood Thickness",
                     "x": 0.04,
-                    "y": 0.46239554317548753,
+                    "y": 0.3983286908077995,
                     "uniqueID": 1745164543202,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
@@ -78,10 +78,15 @@
                 {
                     "atomType": "Molecule",
                     "name": "Potato Chip",
-                    "x": 0.2698412698412698,
-                    "y": 0.3259052924791086,
+                    "x": 0.2638888888888889,
+                    "y": 0.2785515320334262,
                     "uniqueID": 1745164549336,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 0.5
+                        }
+                    ],
                     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
                     "topLevel": false,
                     "allAtoms": [
@@ -2425,6 +2430,13 @@
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Wood Thickness",
+                    "ap2Primary": false,
+                    "ap1ID": 1745164543202,
+                    "ap2ID": 1745164549336
+                },
                 {
                     "ap1Name": "Geometry",
                     "ap2Name": "geometry1",
