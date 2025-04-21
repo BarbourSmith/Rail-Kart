@@ -3444,8 +3444,8 @@
                 {
                     "atomType": "GitHubMolecule",
                     "name": "Rectangle-Rounded",
-                    "x": 0.22619047619047616,
-                    "y": 0.48467966573816157,
+                    "x": 0.16137566137566137,
+                    "y": 0.40668523676880225,
                     "uniqueID": 1745257634647,
                     "ioValues": [
                         {
@@ -4004,8 +4004,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.4173280423280424,
-                    "y": 0.479108635097493,
+                    "x": 0.3062169312169312,
+                    "y": 0.5376044568245125,
                     "uniqueID": 1745257678834,
                     "ioValues": [
                         {
@@ -4018,6 +4018,58 @@
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.4503968253968254,
+                    "y": 0.5403899721448467,
+                    "uniqueID": 1745257693413,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1745257678834
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 90
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.626984126984127,
+                    "y": 0.3983286908077995,
+                    "uniqueID": 1745257709683,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1745257693413
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": -4
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
@@ -4027,6 +4079,20 @@
                     "ap2Primary": true,
                     "ap1ID": 1745257634647,
                     "ap2ID": 1745257678834
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745257678834,
+                    "ap2ID": 1745257693413
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1745257693413,
+                    "ap2ID": 1745257709683
                 }
             ],
             "fileTypeVersion": 1,
