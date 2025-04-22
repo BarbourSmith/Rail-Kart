@@ -2555,12 +2555,7 @@
             "x": 0.20965608465608468,
             "y": 0.777158774373259,
             "uniqueID": 1745165188868,
-            "ioValues": [
-                {
-                    "name": "Wood Thickness",
-                    "ioValue": 10
-                }
-            ],
+            "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -2577,15 +2572,6 @@
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
-                },
-                {
-                    "atomType": "Input",
-                    "name": "Wood Thickness",
-                    "x": 0.04,
-                    "y": 0.46239554317548753,
-                    "uniqueID": 1745165188815,
-                    "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
                 },
                 {
                     "atomType": "Circle",
